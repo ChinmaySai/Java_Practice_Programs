@@ -9,8 +9,7 @@ public class ReadDataScanner {
 		System.out.print("Enter your name : ");
 		name=sc.nextLine();
 		int val=sc.nextInt();
-		String age=sc.nextLine();
-		System.out.println("Welcome to world of Programming "+age);
+		System.out.println("Welcome to world of Programming "+name);
 	}
 
 }
