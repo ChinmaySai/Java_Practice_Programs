@@ -18,7 +18,7 @@ public class ReadDataBuffered {
 		}
 		catch(NumberFormatException e)
 		{
-			System.out.println("Please enter Integer only.");
+			System.out.println("Please enter number only.");
 		}
 		
 		
