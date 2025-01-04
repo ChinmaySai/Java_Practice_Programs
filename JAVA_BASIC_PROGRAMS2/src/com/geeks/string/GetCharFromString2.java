@@ -39,7 +39,6 @@ public class GetCharFromString2 {
 		try
 		{
 			IndexNotInRangeException.getCharindex(input, index);
-		//throw new IndexNotInRangeException();
 		}
 		catch(IndexNotInRangeException e)
 		{
