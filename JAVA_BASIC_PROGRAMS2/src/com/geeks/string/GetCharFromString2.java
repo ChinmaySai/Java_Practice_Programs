@@ -5,9 +5,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 //Java Program to get the Specified character from the index in String.
-class Getchar
+class IndexNotInRangeException extends Exception
 {
-	public static void getCharindex(String input,int index) throws Exception
+	public String toString()
+	{
+		return "Provided index is not with in the String length range";
+		
+	}
+	public static void getCharindex(String input,int index) throws IndexNotInRangeException
 	{
 		if(input.length()>index)
 		{
@@ -15,30 +20,35 @@ class Getchar
 		}
 		else
 		{
-			throw new Exception("Indexed Provided is not within in the String length");
+			throw new IndexNotInRangeException();
 		}
-		
-		
 	}
+
 }
 
-public class GetCharFromString {
+public class GetCharFromString2 {
 
 	public static void main(String[] args) throws IOException{
 
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		System.out.print("Enter the Input String : ");
 		String input=br.readLine();
-		System.out.println("Enter the character index : ");
+		System.out.print("Enter the character index : ");
 		int index=Integer.parseInt(br.readLine());
 	      
 		try
 		{
-		Getchar.getCharindex(input, index);
+			IndexNotInRangeException.getCharindex(input, index);
+		//throw new IndexNotInRangeException();
 		}
-		catch(Exception e)
+		catch(IndexNotInRangeException e)
 		{
-			System.out.println(e);
+         System.out.println(e);
+		}
+		catch(Exception e1)
+		{
+	         System.out.println(e1);
+
 		}
 		
 	}
