@@ -41,7 +41,6 @@ public class GetCharFromString {
 			System.out.println("Provided index is not with in the String length range");
 		}
 		
-		
 	}
 
 }
