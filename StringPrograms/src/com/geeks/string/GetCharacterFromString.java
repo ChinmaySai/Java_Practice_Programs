@@ -24,7 +24,6 @@ public class GetCharacterFromString {
 	     {
 	    	 System.out.println("Provided index with in the provided String Range");
 	     }
-	     
 		}
 		catch(Exception e)
 		{
