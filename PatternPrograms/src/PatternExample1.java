@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//Print Right Triangle Star Pattern
 public class PatternExample1 {
 
 	public static void main(String[] args) {
