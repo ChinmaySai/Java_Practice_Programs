@@ -10,6 +10,7 @@ public class StaticFlowController {
 		disp();
 
 	}
+	
 	static void disp()
 	{
 		System.out.println("static method");
