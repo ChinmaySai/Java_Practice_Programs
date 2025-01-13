@@ -15,13 +15,12 @@ public class FloatMultiply {
 		try {
 			f1=Float.parseFloat(br.readLine());
 			f2=Float.parseFloat(br.readLine());
+			System.out.println("Multiplication of two floating numbers :"+(f1*f2));
 		} catch (NumberFormatException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		System.out.println("Multiplication of two floating numbers :"+(f1*f2));
-		
+		}		
 	}
 
 }
