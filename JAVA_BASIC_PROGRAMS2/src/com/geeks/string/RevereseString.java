@@ -1,3 +1,4 @@
+package com.geeks.string;
 
 import java.io.*;
 import java.util.Scanner;

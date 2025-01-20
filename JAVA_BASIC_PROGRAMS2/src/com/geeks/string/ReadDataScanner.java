@@ -1,3 +1,4 @@
+package com.geeks.string;
 import java.util.Scanner;
 
 public class ReadDataScanner {
