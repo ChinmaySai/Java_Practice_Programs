@@ -1,3 +1,4 @@
+package com.basicprograms;
 import java.util.Scanner;
 
 public class FibanocciRecursion {
@@ -23,13 +24,13 @@ public class FibanocciRecursion {
 	      else
 	      {
 	    	  System.out.print("0 1 ");
-	    	  fib(num);
+	    	  fib(num-2);
 	      }
          
 	}
 	private static void fib(int n) {
 		
-		if(n-2>0)
+		if(n>0)
 		{
          n3=n1+n2;
          n1=n2;
