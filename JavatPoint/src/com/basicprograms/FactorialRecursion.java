@@ -17,10 +17,10 @@ public class FactorialRecursion {
 	public static void main(String[] args) {
 
 		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the number :");
+		System.out.print("Enter the number : ");
 		int num=sc.nextInt();
 		
-		System.out.println(FactorialRecursion.fact(num));
+		System.out.println("Facorial of "+num+" is "+FactorialRecursion.fact(num));
 	}
 
 }
