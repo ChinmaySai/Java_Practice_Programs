@@ -1,3 +1,4 @@
+package com.basicprograms;
 
 class Factorial { 
 	static int factorial(int n) 
