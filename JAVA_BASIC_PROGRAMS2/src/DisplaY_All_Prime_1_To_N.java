@@ -12,21 +12,23 @@ public class DisplaY_All_Prime_1_To_N {
 	public static void main(String[] args) throws IOException {
 
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter the Input Number : ");
 		String number=br.readLine();
 		int num=Integer.parseInt(number);
 		ArrayList<Integer> primeList=new ArrayList();
 		boolean isPrime=false;
-		for(int i=1;i<=num;i++)
+		int count=0;
+		for(int i=2;i<=num;i++)
 		{
-			isPrime=false;
+			isPrime=true;
 			for(int j=2;j<i;j++)
 			{
 				if(i%j==0)
 				{
-				isPrime=true;	
+                  isPrime=false;
 				}
 			}
-			if(!isPrime)
+			if(isPrime)
 			{
 				primeList.add(i);
 			}
