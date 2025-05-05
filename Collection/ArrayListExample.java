@@ -36,8 +36,14 @@ public class ArrayListExample {
         System.out.println("Last Index of 30 "+al.lastIndexOf(30));
         al.forEach(n->System.out.println(n));
         al.trimToSize(); //Reducing the Capacity of List to size of List
-        al.clear();//Clearin the Array List
+        System.out.println("al"+al);
+        //al.removeAll(al2);
+        al.retainAll(al2);
+        System.out.println("al"+al);
+        al.clear();//Clearing the Array List
         System.out.println("al "+al);
+        //al.remove(100);
+        //al.removeAll(al2)
         
 }
 }
