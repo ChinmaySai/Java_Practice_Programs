@@ -5,7 +5,7 @@
  * 
  * Java Program to Print Left Triangle Star Pattern
  */
-
+//Git Testing Changes
 public class Lefttraingle {
 
 	public static void main(String[] args) {
